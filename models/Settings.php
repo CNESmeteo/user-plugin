@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Models;
+<?php namespace CNESmeteo\User\Models;
 
 use Model;
 

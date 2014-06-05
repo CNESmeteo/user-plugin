@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Models;
+<?php namespace CNESmeteo\User\Models;
 
 use Model;
 
@@ -11,7 +11,7 @@ class State extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rainlab_user_states';
+    public $table = 'cnesmeteo_user_states';
 
     /**
      * @var array Guarded fields
@@ -35,7 +35,7 @@ class State extends Model
      * @var array Relations
      */
     public $belongsTo = [
-        'country' => ['RainLab\User\Models\Country']
+        'country' => ['CNESmeteo\User\Models\Country']
     ];
 
     /**

@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Updates;
+<?php namespace CNESmeteo\User\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;

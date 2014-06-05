@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Facades;
+<?php namespace CNESmeteo\User\Facades;
 
 use October\Rain\Support\Facade;
 

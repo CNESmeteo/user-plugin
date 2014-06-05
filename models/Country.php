@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Models;
+<?php namespace CNESmeteo\User\Models;
 
 use Model;
 
@@ -11,7 +11,7 @@ class Country extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rainlab_user_countries';
+    public $table = 'cnesmeteo_user_countries';
 
     /**
      * @var array Guarded fields
@@ -28,14 +28,14 @@ class Country extends Model
      */
     public $rules = [
         'name' => 'required',
-        'code' => 'unique:rainlab_user_countries',
+        'code' => 'unique:cnesmeteo_user_countries',
     ];
 
     /**
      * @var array Relations
      */
     public $hasMany = [
-        'states' => ['RainLab\User\Models\State']
+        'states' => ['CNESmeteo\User\Models\State']
     ];
 
     /**

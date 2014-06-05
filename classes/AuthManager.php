@@ -1,7 +1,7 @@
-<?php namespace RainLab\User\Classes;
+<?php namespace CNESmeteo\User\Classes;
 
 use October\Rain\Auth\Manager as RainAuthManager;
-use RainLab\User\Models\Settings as UserSettings;
+use CNESmeteo\User\Models\Settings as UserSettings;
 
 class AuthManager extends RainAuthManager
 {
@@ -9,11 +9,11 @@ class AuthManager extends RainAuthManager
 
     protected $sessionKey = 'user_auth';
 
-    protected $userModel = 'RainLab\User\Models\User';
+    protected $userModel = 'CNESmeteo\User\Models\User';
 
-    // protected $groupModel = 'RainLab\User\Models\Group';
+    // protected $groupModel = 'CNESmeteo\User\Models\Group';
 
-    protected $throttleModel = 'RainLab\User\Models\Throttle';
+    protected $throttleModel = 'CNESmeteo\User\Models\Throttle';
 
     public function init()
     {

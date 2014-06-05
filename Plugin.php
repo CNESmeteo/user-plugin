@@ -1,4 +1,4 @@
-<?php namespace RainLab\User;
+<?php namespace CNESmeteo\User;
 
 use App;
 use Backend;
@@ -21,19 +21,19 @@ class Plugin extends PluginBase
     public function register()
     {
         $alias = AliasLoader::getInstance();
-        $alias->alias('Auth', 'RainLab\User\Facades\Auth');
+        $alias->alias('Auth', 'CNESmeteo\User\Facades\Auth');
 
         App::singleton('user.auth', function() {
-            return \RainLab\User\Classes\AuthManager::instance();
+            return \CNESmeteo\User\Classes\AuthManager::instance();
         });
     }
 
     public function registerComponents()
     {
         return [
-            'RainLab\User\Components\Session'       => 'session',
-            'RainLab\User\Components\Account'       => 'account',
-            'RainLab\User\Components\ResetPassword' => 'resetPassword',
+            'CNESmeteo\User\Components\Session'       => 'session',
+            'CNESmeteo\User\Components\Account'       => 'account',
+            'CNESmeteo\User\Components\ResetPassword' => 'resetPassword',
         ];
     }
 
@@ -42,7 +42,7 @@ class Plugin extends PluginBase
         return [
             'user' => [
                 'label'       => 'Users',
-                'url'         => Backend::url('rainlab/user/users'),
+                'url'         => Backend::url('cnesmeteo/user/users'),
                 'icon'        => 'icon-user',
                 'permissions' => ['user:*'],
                 'order'       => 500,
@@ -51,7 +51,7 @@ class Plugin extends PluginBase
                     'users' => [
                         'label'       => 'All Users',
                         'icon'        => 'icon-user',
-                        'url'         => Backend::url('rainlab/user/users'),
+                        'url'         => Backend::url('cnesmeteo/user/users'),
                         'permissions' => ['user:access_users'],
                     ],
                 ]
@@ -68,7 +68,7 @@ class Plugin extends PluginBase
                 'description' => 'Manage user based settings.',
                 'category'    => 'Users',
                 'icon'        => 'icon-cog',
-                'class'       => 'RainLab\User\Models\Settings',
+                'class'       => 'CNESmeteo\User\Models\Settings',
                 'sort'        => 100
             ],
             'location' => [
@@ -76,7 +76,7 @@ class Plugin extends PluginBase
                 'description' => 'Manage available user countries and states.',
                 'category'    => 'Users',
                 'icon'        => 'icon-globe',
-                'url'         => Backend::url('rainlab/user/locations'),
+                'url'         => Backend::url('cnesmeteo/user/locations'),
                 'sort'        => 100
             ]
         ];

@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Components;
+<?php namespace CNESmeteo\User\Components;
 
 use Auth;
 use Request;

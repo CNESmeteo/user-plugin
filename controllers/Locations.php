@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Controllers;
+<?php namespace CNESmeteo\User\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;

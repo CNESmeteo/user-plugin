@@ -1,8 +1,8 @@
-<?php namespace RainLab\User\Updates;
+<?php namespace CNESmeteo\User\Updates;
 
 use October\Rain\Database\Updates\Seeder;
-use RainLab\User\Models\Country;
-use RainLab\User\Models\State;
+use CNESmeteo\User\Models\Country;
+use CNESmeteo\User\Models\State;
 
 class SeedAllTables extends Seeder
 {

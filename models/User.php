@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Models;
+<?php namespace CNESmeteo\User\Models;
 
 use October\Rain\Auth\Models\User as UserBase;
 
@@ -22,7 +22,7 @@ class User extends UserBase
      * @var array Relations
      */
     public $belongsToMany = [
-        // 'groups' => ['RainLab\User\Models\Group', 'table' => 'users_groups']
+        // 'groups' => ['CNESmeteo\User\Models\Group', 'table' => 'users_groups']
     ];
 
     public $attachOne = [

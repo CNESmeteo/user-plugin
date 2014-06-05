@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Components;
+<?php namespace CNESmeteo\User\Components;
 
 use Auth;
 use Mail;
@@ -9,7 +9,7 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use System\Classes\ApplicationException;
 use October\Rain\Support\ValidationException;
-use RainLab\User\Models\Settings as UserSettings;
+use CNESmeteo\User\Models\Settings as UserSettings;
 use Exception;
 
 class Account extends ComponentBase
@@ -267,7 +267,7 @@ class Account extends ComponentBase
             'code' => $code
         ];
 
-        Mail::send('rainlab.user::emails.activate', $data, function($message) use ($user)
+        Mail::send('cnesmeteo.user::emails.activate', $data, function($message) use ($user)
         {
             $message->to($user->email, $user->name);
         });

@@ -3,9 +3,9 @@
 # ===================================
 
 title: Manage Users
-list: @/plugins/rainlab/user/models/user/columns.yaml
-modelClass: RainLab\User\Models\User
-recordUrl: rainlab/user/users/update/:id
+list: @/plugins/cnesmeteo/user/models/user/columns.yaml
+modelClass: CNESmeteo\User\Models\User
+recordUrl: cnesmeteo/user/users/update/:id
 noRecordsMessage: backend::lang.list.no_records
 recordsPerPage: 20
 showCheckboxes: true

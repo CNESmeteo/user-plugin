@@ -1,4 +1,4 @@
-<?php namespace RainLab\User\Controllers;
+<?php namespace CNESmeteo\User\Controllers;
 
 use Flash;
 use BackendMenu;
@@ -23,7 +23,7 @@ class Users extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('RainLab.User', 'user', 'users');
+        BackendMenu::setContext('CNESmeteo.User', 'user', 'users');
     }
 
     /**

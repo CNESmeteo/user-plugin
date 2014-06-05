@@ -9,7 +9,7 @@ name: Location
 form: @/plugins/cnesmeteo/user/models/country/fields.yaml
 
 # Model Class name
-modelClass: CNESmeteo\User\Models\Country
+modelClass: CnesMeteo\User\Models\Country
 
 # Default redirect location
 defaultRedirect: cnesmeteo/user/locations

@@ -4,7 +4,7 @@
 
 name: User
 form: @/plugins/cnesmeteo/user/models/user/fields.yaml
-modelClass: CNESmeteo\User\Models\User
+modelClass: CnesMeteo\User\Models\User
 defaultRedirect: cnesmeteo/user/users
 
 create:

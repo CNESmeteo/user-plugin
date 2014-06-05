@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Components;
+<?php namespace CnesMeteo\User\Components;
 
 use Auth;
 use Request;

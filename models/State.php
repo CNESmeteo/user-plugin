@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Models;
+<?php namespace CnesMeteo\User\Models;
 
 use Model;
 
@@ -35,7 +35,7 @@ class State extends Model
      * @var array Relations
      */
     public $belongsTo = [
-        'country' => ['CNESmeteo\User\Models\Country']
+        'country' => ['CnesMeteo\User\Models\Country']
     ];
 
     /**

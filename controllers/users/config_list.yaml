@@ -4,7 +4,7 @@
 
 title: Manage Users
 list: @/plugins/cnesmeteo/user/models/user/columns.yaml
-modelClass: CNESmeteo\User\Models\User
+modelClass: CnesMeteo\User\Models\User
 recordUrl: cnesmeteo/user/users/update/:id
 noRecordsMessage: backend::lang.list.no_records
 recordsPerPage: 20

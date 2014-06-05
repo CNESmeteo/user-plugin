@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User;
+<?php namespace CnesMeteo\User;
 
 use App;
 use Backend;
@@ -21,19 +21,19 @@ class Plugin extends PluginBase
     public function register()
     {
         $alias = AliasLoader::getInstance();
-        $alias->alias('Auth', 'CNESmeteo\User\Facades\Auth');
+        $alias->alias('Auth', 'CnesMeteo\User\Facades\Auth');
 
         App::singleton('user.auth', function() {
-            return \CNESmeteo\User\Classes\AuthManager::instance();
+            return \CnesMeteo\User\Classes\AuthManager::instance();
         });
     }
 
     public function registerComponents()
     {
         return [
-            'CNESmeteo\User\Components\Session'       => 'session',
-            'CNESmeteo\User\Components\Account'       => 'account',
-            'CNESmeteo\User\Components\ResetPassword' => 'resetPassword',
+            'CnesMeteo\User\Components\Session'       => 'session',
+            'CnesMeteo\User\Components\Account'       => 'account',
+            'CnesMeteo\User\Components\ResetPassword' => 'resetPassword',
         ];
     }
 
@@ -68,7 +68,7 @@ class Plugin extends PluginBase
                 'description' => 'Manage user based settings.',
                 'category'    => 'Users',
                 'icon'        => 'icon-cog',
-                'class'       => 'CNESmeteo\User\Models\Settings',
+                'class'       => 'CnesMeteo\User\Models\Settings',
                 'sort'        => 100
             ],
             'location' => [

@@ -1,8 +1,8 @@
-<?php namespace CNESmeteo\User\Updates;
+<?php namespace CnesMeteo\User\Updates;
 
 use October\Rain\Database\Updates\Seeder;
-use CNESmeteo\User\Models\Country;
-use CNESmeteo\User\Models\State;
+use CnesMeteo\User\Models\Country;
+use CnesMeteo\User\Models\State;
 
 class SeedAllTables extends Seeder
 {

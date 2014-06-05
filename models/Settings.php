@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Models;
+<?php namespace CnesMeteo\User\Models;
 
 use Model;
 

@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Controllers;
+<?php namespace CnesMeteo\User\Controllers;
 
 use Flash;
 use BackendMenu;
@@ -23,7 +23,7 @@ class Users extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('CNESmeteo.User', 'user', 'users');
+        BackendMenu::setContext('CnesMeteo.User', 'user', 'users');
     }
 
     /**

@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Models;
+<?php namespace CnesMeteo\User\Models;
 
 use October\Rain\Auth\Models\Throttle as ThrottleBase;
 
@@ -13,6 +13,6 @@ class Throttle extends ThrottleBase
      * @var array Relations
      */
     public $belongsTo = [
-        'user' => ['CNESmeteo\User\Models\User']
+        'user' => ['CnesMeteo\User\Models\User']
     ];
 }

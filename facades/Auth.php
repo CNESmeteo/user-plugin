@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Facades;
+<?php namespace CnesMeteo\User\Facades;
 
 use October\Rain\Support\Facade;
 

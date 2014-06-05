@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Components;
+<?php namespace CnesMeteo\User\Components;
 
 use Auth;
 use Mail;
@@ -9,7 +9,7 @@ use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use System\Classes\ApplicationException;
 use October\Rain\Support\ValidationException;
-use CNESmeteo\User\Models\Settings as UserSettings;
+use CnesMeteo\User\Models\Settings as UserSettings;
 use Exception;
 
 class Account extends ComponentBase

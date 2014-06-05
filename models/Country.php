@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Models;
+<?php namespace CnesMeteo\User\Models;
 
 use Model;
 
@@ -35,7 +35,7 @@ class Country extends Model
      * @var array Relations
      */
     public $hasMany = [
-        'states' => ['CNESmeteo\User\Models\State']
+        'states' => ['CnesMeteo\User\Models\State']
     ];
 
     /**

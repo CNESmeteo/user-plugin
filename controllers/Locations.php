@@ -1,4 +1,4 @@
-<?php namespace CNESmeteo\User\Controllers;
+<?php namespace CnesMeteo\User\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
